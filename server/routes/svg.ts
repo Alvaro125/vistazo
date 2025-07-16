@@ -76,7 +76,7 @@ export default defineEventHandler((event) => {
   `;
 
   const svgContent = `
-<svg width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}" fill="none" xmlns="http://www.w3.org/2000/svg" style="background: black;">
+<svg width="${svgWidth}" height="${svgHeight}" viewBox="0 0 ${svgWidth} ${svgHeight}" fill="none" xmlns="http://www.w3.org/2000/svg">
 <foreignObject x="-100" y="-100" width="${svgWidth + 200}" height="${svgHeight + 200}"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(50px);clip-path:url(#bgblur_1_7_142_clip_path);height:100%;width:100%"></div></foreignObject><g data-figma-bg-blur-radius="100">
 <g clip-path="url(#clip0_7_142)">
 <path d="${clipPathD.trim()}" fill="white" fill-opacity="0.01" style="mix-blend-mode:luminosity"/>

@@ -10,8 +10,20 @@ export default defineEventHandler((event) => {
   // Define valores padrão se a largura ou altura não forem fornecidas
   const defaultWidth = 199;
   const defaultHeight = 48;
-  const svgWidth = parseFloat(width || defaultWidth);
-  const svgHeight = parseFloat(height || defaultHeight);
+  const svgWidth = parseFloat(
+    typeof width === "string"
+      ? width
+      : typeof width === "number"
+      ? width.toString()
+      : defaultWidth.toString()
+  );
+  const svgHeight = parseFloat(
+    typeof height === "string"
+      ? height
+      : typeof height === "number"
+      ? height.toString()
+      : defaultHeight.toString()
+  );
 
   // Define um raio de arredondamento mais natural.
   // Usamos 25% da menor dimensão para um arredondamento visível e proporcional.

@@ -16,3 +16,9 @@
 
 > "Vistazo" means "a glance" in Spanish — give your visitors a great one.
 
+
+
+[![GitHub Streak](https://streak-stats.demolab.com/?user=alvaro125&currStreakNum=2FD3EB&fire=pink&sideLabels=F00&date_format=[Y.]n.j)](https://git.io/streak-stats)
+
+
+![GitHub Streak]("http://localhost:3000/api/liquid_glass?text=CustomSize")
